@@ -20,7 +20,7 @@ pip install pillow
 pip install pytesseract
 ```
 
-pytesseract这个是谷歌的OCR库，安装有点麻烦，请参考[pytesseract安装详情](https://www.jianshu.com/p/2db541800418)
+pytesseract这个是谷歌的OCR库，安装有点麻烦，请参考[pytesseract安装详情](https://my.oschina.net/u/4321737/blog/3529887?hmsr=kaifa_aladdin)
 
 还有就是要实现图片发送至QQ功能的话，需要一个QQ小号，使用的是[go-cqhttp](https://docs.go-cqhttp.org/)这个也是很有意思的项目。
 
