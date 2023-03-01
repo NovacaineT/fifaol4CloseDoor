@@ -58,9 +58,7 @@ a = int(time.localtime()[3]+1)%2 == 0 and int(time.localtime()[4]) == 0
 
 还有就是脚本执行过程中，有时候会出现窗口混乱的情况，所以除了FIFAOL4以外，还要打开log文件夹的窗口，log文件夹的窗口打开以后最小化就行，出现混乱会切换一下。
 
-```
-![alt 属性文本](图片地址)
-```
+![](https://raw.githubusercontent.com/NovacaineT/fifaol4CloseDoor/main/temp/md-1.jpg)
 
 ## 最后
 
