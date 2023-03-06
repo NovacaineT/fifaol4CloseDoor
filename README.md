@@ -35,7 +35,9 @@ pytesseract这个是谷歌的OCR库，安装有点麻烦，请参考[pytesseract
 因为我要堵门的球员的刷新时间是偶数时，0分至30分之前，所以我在main.py文件中写的判断是
 
 ``` python
-a = int(time.localtime()[3])%2 == 0 and int(time.localtime()[4]) == 0
+isEvenNumber = int(time.localtime()[3]) % 2 == 0 and int(time.localtime()[4]) == 0
+if(isEvenNumber):
+    ……
 ```
 
 即必须要在偶数时0分前启动脚本，到0分会自动开始堵门，例如下一个刷新时间是16:00至16:30之间，就必须要在16:00前启动脚本，最晚最晚16:00启动，16:01启动的话就无法正常开始堵门了，只能等到18:00堵了。
@@ -47,13 +49,16 @@ a = int(time.localtime()[3])%2 == 0 and int(time.localtime()[4]) == 0
 如不需要这种休眠判断，可以改为
 
 ``` python
-a = 1
+if(1):
+    ……
 ```
 
 如你要堵门的球员刷新时间是奇数时0分到30分，例如13:00到13:30之间随机刷新，可以改为
 
 ``` python
-a = int(time.localtime()[3]+1)%2 == 0 and int(time.localtime()[4]) == 0
+isOddNumber = (int(time.localtime()[3]) + 1) % 2 == 0 and int(time.localtime()[4]) == 0
+if(isOddNumber):
+    ……
 ```
 
 还有就是脚本执行过程中，有时候会出现窗口混乱的情况，所以除了FIFAOL4以外，还要打开log文件夹的窗口，log文件夹的窗口打开以后最小化就行，出现混乱会切换一下。
